@@ -2,9 +2,6 @@ import pandas as pd
 import numpy as np
 from typing import Dict, Any
 
-# ==============================================================================
-# SECTION 2: 能源系统模型类
-# ==============================================================================
 class LoadProfile:
     def __init__(self, config: Dict[str, Any]): self.config = config
     def generate(self, time_index: pd.DatetimeIndex) -> pd.Series:
