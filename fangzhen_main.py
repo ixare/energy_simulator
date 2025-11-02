@@ -3,9 +3,6 @@ from config import CONFIG
 from simulator import EnergySystemSimulator
 from analyzer import Analyzer
 
-# ==============================================================================
-# SECTION 5: 主程序入口
-# ==============================================================================
 if __name__ == '__main__':
     # 从配置文件中读取是否运行参数扫描
     run_scan = CONFIG["ENABLE_OPTIMIZATION_SCAN"]
