@@ -8,15 +8,11 @@ from pymoo.operators.crossover.sbx import SBX
 from pymoo.operators.mutation.pm import PM
 from pymoo.termination import get_termination
 from pymoo.optimize import minimize
-
 # 从项目中导入必要的类和配置
 from config import CONFIG
 from simulator import EnergySystemSimulator
 from analyzer import Analyzer
 
-# ==============================================================================
-# SECTION 1: 定义遗传算法的优化问题
-# ==============================================================================
 class EnergySystemOptimizationProblem(Problem):
 
     def __init__(self, base_config, simulator):
