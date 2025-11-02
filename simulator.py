@@ -9,9 +9,7 @@ import copy
 from models import LoadProfile, PVSystem, AWESystem, BatteryStorage, HydrogenStorage
 from analyzer import Analyzer
 from plot_pareto_front import plot_pareto_front
-# ==============================================================================
-# SECTION 3: 主仿真流程
-# ==============================================================================
+
 class EnergySystemSimulator:
     def __init__(self, base_config: Dict[str, Any]):
         self.base_config = base_config; self.met_data = self._load_meteorological_data()
