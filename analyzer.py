@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Dict, Any
-
 from config import font, title_font
 from models import BatteryStorage, HydrogenStorage
 from plot_energy_balance import plot_energy_balance_stacked_area
@@ -10,9 +9,7 @@ from plot_storage_duration import plot_storage_duration_curve
 from plot_seasonal_analysis import plot_monthly_violin
 from plot_daily_generation import plot_daily_generation
 from plot_diurnal_heatmap import plot_diurnal_heatmap
-# ==============================================================================
-# SECTION 4: 结果分析与可视化
-# ==============================================================================
+
 class Analyzer:
     def __init__(self, config: Dict[str, Any]):
         self.config = config
